@@ -65,16 +65,3 @@ python multi_modal_anomaly.py \
 | `--batch_size` | 训练/评估批大小 |
 | `--use_supervised_head` | 是否启用监督头（需提供标签） |
 
-## 扩展建议
-
-- 新增模态：实现 `BaseEncoder` 子类及数据集类，把 latent 接入 `UnifiedGaussianScorer`。
-- 使用更强评分器：替换为 Normalizing Flow、Energy-Based Model 等。
-- 在线/流式：在 `update_stats` 中添加增量均值/协方差估计。
-
-## 局限
-
-- 当前 heatmap 使用 Grad-CAM 风格近似，精度受限。  
-- Gaussian 假设对高度非高斯分布可能不够；可结合核密度或混合模型。  
-- 示例脚本未自动平衡不同模态样本量，实际训练可按模态采样策略调节。
-
-

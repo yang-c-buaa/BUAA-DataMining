@@ -57,8 +57,3 @@
 - **缺少字体/库**：若 `matplotlib` 或 `python-docx` 报缺失，确认已从 `requirements.txt` 安装；中文字体可改为系统已安装的字体名称。
 - **自定义评估**：可在 `ImageClustering.evaluate_clustering()` 中添加新的指标（如 Calinski-Harabasz、Davies-Bouldin），并在 `visualize_results()` 中扩展更多图表。
 
-## 8. 后续扩展建议
-- 引入深度特征：利用预训练 CNN（如 ResNet 特征）替代手工直方图，以提高聚类区分度。
-- 试验更多聚类器：如 DBSCAN、Spectral 或 Gaussian Mixture，并在脚本中统一封装接口进行网格比较。
-- 自动化报告：将 `image_clustering.py` 的结果直接传递给 `WordReportGenerator`，避免重复计算并保持指标一致。
-

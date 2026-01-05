@@ -19,7 +19,7 @@ import cv2
 # --- 1. 配置参数 (与之前相同) ---
 CONFIG = {
     "dataset_path": "./",  # !<-- 修改为你的数据集根目录
-    "category": "zipper",  # !<-- 修改为你需要处理的类别 ('hazelnut' 或 'zipper')
+    "category": "hazelnut",  # !<-- 修改为你需要处理的类别 ('hazelnut' 或 'zipper')
     "image_size": 256,
     "batch_size": 16,
     "device": "cuda" if torch.cuda.is_available() else "cpu",

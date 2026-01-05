@@ -125,24 +125,9 @@ pip install -r requirements.txt
   - `artifacts/image_scores.csv`、`artifacts/tabular_scores.csv`：各模态异常分数。
   - `visualizations/heatmaps/`：图像异常热力图。
   - `reports/metrics.json`：若有标签则保存多模态指标。
-- **详细说明**：见 `任务 5/README.md` 及 `任务 5/task5_multi_modal/README.md`（如存在）。
+- **详细说明**：见 `任务 5/README.md` 及 `任务 5/task5_multi_modal/README.md`。
 
 ---
-
-## 建议阅读顺序与学习路径
-
-若将本仓库视作一个循序渐进的数据挖掘实践，可以按以下顺序阅读与运行：
-
-1. **任务 1：图像聚类**  
-   - 侧重传统特征工程 + 聚类算法 + 指标与可视化。
-2. **任务 2：图像异常检测**  
-   - 体验深度特征提取 + 统计建模的无监督异常检测。
-3. **任务 3：时间序列预测**  
-   - 了解回归建模、滑动窗口构造与时间序列评估指标。
-4. **任务 4：无监督疾病判断**  
-   - 练习基于 IsolationForest 的异常检测与阈值设定。
-5. **任务 5：多模态异常检测框架**  
-   - 综合前面任务，理解如何在统一潜在空间下融合多模态数据。
 
 
 
